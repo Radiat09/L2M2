@@ -21,7 +21,9 @@
 
   const boolArray: GenericArray<boolean> = [true, false, true]; // array of booleans
 
-  const user: GenericArray<{ name: string; age: number }> = [
+  type Singleuser = { name: string; age: number };
+
+  const user: GenericArray<Singleuser> = [
     {
       name: "John",
       age: 30,
